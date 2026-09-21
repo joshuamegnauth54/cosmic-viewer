@@ -1499,7 +1499,7 @@ impl Application for CosmicViewer {
                 .name(fl!("app-name"))
                 .icon(icon::from_name(Self::APP_ID))
                 .version(env!("CARGO_PKG_VERSION"))
-                .author("System76")
+                .author("Bryan Hyland and System76")
                 .comments(fl!("app-description"))
                 .license("GPL-3.0-only")
                 .developers([("System76", "info@system76.com")])

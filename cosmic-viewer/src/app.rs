@@ -1367,11 +1367,8 @@ impl CosmicViewer {
                 },
             )),
         );
-        let startup = widget::settings::section().title(fl!("startup")).add(
-            widget::settings::item::builder(fl!("show-navbar"))
-                .toggler(self.config.show_navbar, ViewerMessage::ShowNavbar),
-        );
-        widget::settings::view_column(vec![appearance.into(), startup.into()]).into()
+
+        widget::settings::view_column(vec![appearance.into()]).into()
     }
 }
 
